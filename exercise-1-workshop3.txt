@@ -1,0 +1,15 @@
+mysql> SELECT accountId, COUNT(*) FROM AddressBook GROUP BY accountId ORDER BY COUNT(*) DESC LIMIT 1;
++-----------+----------+
+| accountId | COUNT(*) |
++-----------+----------+
+|         5 |       19 |
++-----------+----------+
+1 row in set (0.01 sec)
+
+mysql> SELECT addressBookId, COUNT(*) FROM Entry GROUP BY addressBookId ORDER BY COUNT(*) DESC LIMIT 1;
++---------------+----------+
+| addressBookId | COUNT(*) |
++---------------+----------+
+|            37 |       52 |
++---------------+----------+
+1 row in set (0.01 sec)
