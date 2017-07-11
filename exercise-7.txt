@@ -1,0 +1,5 @@
++USE decodemtl_addressbook;
+ +SOURCE data/import-table-structure.sql;
+ +SOURCE data/import-account.sql;
+ +SOURCE data/import-addressbook.sql;
+ +SOURCE data/import-entry.sql; --output is too long to show! 1,000 + rows. 
