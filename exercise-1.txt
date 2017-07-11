@@ -1,5 +1,9 @@
+mysql> USE decodemtl_addressbook;
+Database changed
+mysql> data/import-table-structure.sql
+    -> ;
 mysql> source data/import-table-structure.sql;
-Query OK, 0 rows affected, 1 warning (0.00 sec)
+Query OK, 3 rows affected (0.02 sec)
 
 Query OK, 1 row affected (0.00 sec)
 
@@ -15,3 +19,13 @@ Query OK, 0 rows affected (0.01 sec)
 Query OK, 0 rows affected, 1 warning (0.00 sec)
 
 Query OK, 0 rows affected (0.01 sec)
+
+mysql> SHOW TABLES;
++----------------------------------------+
+| Tables_in_decodemtl_addressbook_import |
++----------------------------------------+
+| Account                                |
+| AddressBook                            |
+| Entry                                  |
++----------------------------------------+
+3 rows in set (0.00 sec)
